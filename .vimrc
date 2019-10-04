@@ -14,4 +14,7 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
-
+" turns off swapfiles
+set noswapfile
+" enable persistent undo
+set undodir=~/.vim/undodir
