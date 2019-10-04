@@ -1,0 +1,3 @@
+#!/bin/bash
+python3 ~/java/robotics/frc/wpilibs/tools/OutlineViewer.py
+
