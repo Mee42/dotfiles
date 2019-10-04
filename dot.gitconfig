@@ -1,6 +1,7 @@
 [user]
 	name = carson
 	email = carson42g@gmail.com
+	signingkey = BB881A11F78A79D93FAB707D67D77A4726CF8D6F
  
 [credential]
 	helper = cache
@@ -11,8 +12,8 @@
 [alias]
 	s = status
 	a = add
-	ac = !git add -A && git commit
-	c = commit
+    ac = !git add -A && git commit
+    c = commit
 	co = checkout
 	com = checkout master
 	cod = checkout dev
@@ -22,5 +23,6 @@
 
 [commit]
 	gpgsign = true
+	verbose = true
 [gpg]
 	program = gpg
