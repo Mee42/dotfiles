@@ -1,0 +1,26 @@
+[user]
+	name = carson
+	email = carson42g@gmail.com
+ 
+[credential]
+	helper = cache
+[core]
+	editor = vim
+	autocrlf = input
+
+[alias]
+	s = status
+	a = add
+	ac = !git add -A && git commit
+	c = commit
+	co = checkout
+	com = checkout master
+	cod = checkout dev
+    pu = push
+	puom = push -u origin master
+    b = branch
+
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
