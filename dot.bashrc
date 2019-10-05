@@ -20,8 +20,9 @@ alias wget="wget -U 'noleak'"
 alias curl="curl --user-agent 'noleak'"
 alias xterm="xterm -fg red -bg black"
 alias lc="lolcat"
-
 alias gitg="gitg &>/dev/null"
+
+
 
 # source files
 [ -r /usr/share/bash-completion/completions ] &&
@@ -33,6 +34,7 @@ gpgconf --launch gpg-agent
 
 
 export JAVA_HOME=/usr/lib/jvm/java-12-openjdk
+export GPG_TTY=$(tty)
 
 source /usr/share/autojump/autojump.bash
 
