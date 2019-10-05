@@ -5,10 +5,17 @@ export PATH="${PATH}/home/carson/idea_pro/idea-IU-182.3684.101/bin:"
 export PATH="${PATH}/home/carson/.l/frc/wpilibs/roborio/bin:"
 export PATH="${PATH}/home/carson/.gem/ruby/2.6.0/bin:"
 export PATH="${PATH}/home/carson/.gumbo:"
-export PS1="\[$darkgrey\][ \[$red\]\H \[$white\]\W\[$red\] \[$darkgrey\]]\\[$red\]\$ \[$nc\]"
 export LD_PRELOAD=""
 export EDITOR="vim"
 export BROWSER="firefox-beta"
+export JAVA_HOME=/usr/lib/jvm/java-12-openjdk
+export GPG_TTY=$(tty)
+
+# this is for gpg ssh keys
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+
+
 
 # alias
 alias ls="ls --color"
@@ -28,16 +35,7 @@ alias gitg="gitg &>/dev/null"
 [ -r /usr/share/bash-completion/completions ] &&
   . /usr/share/bash-completion/completions/*
 
-# this is for gpg ssh keys
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpgconf --launch gpg-agent
-
-
-export JAVA_HOME=/usr/lib/jvm/java-12-openjdk
-export GPG_TTY=$(tty)
-
 source /usr/share/autojump/autojump.bash
-
 source ~/.ps1
 
 export SDKMAN_DIR="/home/carson/.sdkman"
