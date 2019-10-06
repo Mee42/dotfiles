@@ -94,6 +94,7 @@ bindsym $mod+a focus parent
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
+
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -101,6 +102,15 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+
+
+workspace $ws1 output DP-0
+workspace $ws2 output DP-0
+
+workspace $ws3 output DVI-D-0
+workspace $ws4 output DVI-D-0
+
+workspace $ws10 output HDMI-0
 
 # switch to workspace
 bindsym $mod+ampersand workspace $ws1
@@ -178,6 +188,13 @@ exec --no-startup-id setxkbmap us dvp
 exec --no-startup-id unclutter -b --ignore-scrolling
 exec --no-startup-id conky -b -d
 
+assign [class="Firefox Beta"] $ws3
+assign [class="discord"] $ws3
+assign [class="Spotify"] $ws4
+# apparently this doesn't work?
+# for_window [class="Spotify"] move to workspace $ws
+
+
 for_window [title="FLOAT"] floating enable
 for_window [title="QEMU"] floating enable
 
@@ -188,10 +205,10 @@ for_window [class=".*"] border pixel 0
 for_window [class="^.*"] border pixel 0
 
 gaps inner 20
-workspace $ws1 gaps inner 0
-workspace $ws2 gaps top 50
-workspace $ws2 gaps bottom 30
-
+workspace $ws4 gaps inner 0
+workspace $ws3 gaps inner 0
+workspace $ws10 gaps top 50
+workspace $ws10 gaps bottom 30
 
 
 set $Locker "/home/carson/bin/i3lock-off -c '#000000' && sleep 1"
@@ -209,4 +226,6 @@ mode "$mode_system" {
 }
 
 bindsym $mod+c mode "$mode_system"
-
+bindsym $mod+r mode "$mode_system"
+bindsym $mod+Shift+c mode "$mode_system"
+bindsym $mod+Shift+r mode "$mode_system"
