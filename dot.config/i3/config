@@ -176,6 +176,7 @@ exec --no-startup-id spotify &
 exec --no-startup-id ~/.screen
 exec --no-startup-id setxkbmap us dvp 
 exec --no-startup-id unclutter -b --ignore-scrolling
+exec --no-startup-id conky -b -d
 
 for_window [title="FLOAT"] floating enable
 for_window [title="QEMU"] floating enable
