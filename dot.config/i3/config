@@ -93,15 +93,17 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "2"
-set $ws3 "3"
 
-set $ws4 "4"
+set $ws3 "3"
+set $ws4 "Music"
+
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
+
+set $ws10 "ohno"
 
 
 workspace $ws1 output DP-0
@@ -209,7 +211,8 @@ workspace $ws4 gaps inner 0
 workspace $ws3 gaps inner 0
 workspace $ws10 gaps top 50
 workspace $ws10 gaps bottom 30
-
+workspace $ws10 gaps left 620
+workspace $ws10 gaps right 70
 
 set $Locker "/home/carson/bin/i3lock-off -c '#000000' && sleep 1"
 
