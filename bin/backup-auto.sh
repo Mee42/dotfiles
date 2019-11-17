@@ -6,6 +6,7 @@ tar czf backup.tar.gz \
     --exclude='/home/carson/pictures/stuff-idk' \
     --exclude='/home/carson/java/workspace/Mindustry' \
     --exclude='/home/carson/java/workspace/kotlin' \
+    --exclude='/home/carson/no-bak' \
     /home/carson/Desktop \
     /home/carson/blender \
     /home/carson/ctf \
