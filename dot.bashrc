@@ -5,6 +5,7 @@ export PATH="${PATH}/home/carson/idea_pro/idea-IU-182.3684.101/bin:"
 export PATH="${PATH}/home/carson/.l/frc/wpilibs/roborio/bin:"
 export PATH="${PATH}/home/carson/.gem/ruby/2.6.0/bin:"
 export PATH="${PATH}/home/carson/.gumbo:"
+export PATH="${PATH}/home/carson/.local/bin:"
 export LD_PRELOAD=""
 export EDITOR="vim"
 export BROWSER="firefox-beta"
@@ -18,6 +19,7 @@ gpgconf --launch gpg-agent
 
 
 # alias
+alias :q="exit"
 alias ls="ls --color"
 alias vi="vim"
 alias nano="vim"
