@@ -10,8 +10,9 @@
 	autocrlf = input
 
 [alias]
-	s = status
-	a = add
+    s = status
+    a = add
+    ap = add --patch -A
     ac = !git add -A && git commit
     c = commit
 	co = checkout
