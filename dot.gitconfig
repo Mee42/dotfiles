@@ -19,6 +19,7 @@
     com = checkout master
     cod = checkout dev
     pu = push
+    puo = push -u origin master
     puom = push -u origin master
     b = branch
 
