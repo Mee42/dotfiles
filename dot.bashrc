@@ -42,3 +42,5 @@ source ~/.ps1
 
 export SDKMAN_DIR="/home/carson/.sdkman"
 [[ -s "/home/carson/.sdkman/bin/sdkman-init.sh" ]] && source "/home/carson/.sdkman/bin/sdkman-init.sh"
+
+gpg-connect-agent updatestartuptty /bye > /dev/null
