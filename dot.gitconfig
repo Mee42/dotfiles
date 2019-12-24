@@ -1,13 +1,13 @@
 [user]
-	name = Carson Graham
-	email = carson42g@gmail.com
-	signingkey = BB881A11F78A79D93FAB707D67D77A4726CF8D6F
+    name = Carson Graham
+    email = carson42g@gmail.com
+    signingkey = BB881A11F78A79D93FAB707D67D77A4726CF8D6F
  
 [credential]
-	helper = cache
+    helper = cache
 [core]
-	editor = vim
-	autocrlf = input
+    editor = vim
+    autocrlf = input
 
 [alias]
     s = status
@@ -15,15 +15,15 @@
     ap = add --patch -A
     ac = !git add -A && git commit
     c = commit
-	co = checkout
-	com = checkout master
-	cod = checkout dev
+    co = checkout
+    com = checkout master
+    cod = checkout dev
     pu = push
-	puom = push -u origin master
+    puom = push -u origin master
     b = branch
 
 [commit]
-	gpgsign = true
-	verbose = true
+    gpgsign = true
+    verbose = true
 [gpg]
-	program = gpg
+    program = gpg
