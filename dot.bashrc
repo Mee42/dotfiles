@@ -2,10 +2,12 @@
 export PATH="${HOME}/bin:/bin:/sbin:/usr/bin:/usr/sbin:~/:/usr/local/bin:"
 export PATH="${PATH}/usr/local/sbin:/opt/bin:/usr/bin/core_perl:/usr/games/bin:"
 export PATH="${PATH}/home/carson/idea_pro/idea-IU-182.3684.101/bin:"
-export PATH="${PATH}/home/carson/.l/frc/wpilibs/roborio/bin:"
+export PATH="${PATH}/home/carson/wpilib/2020/roborio/bin:"
 export PATH="${PATH}/home/carson/.gem/ruby/2.6.0/bin:"
-export PATH="${PATH}/home/carson/.gumbo:"
+
 export PATH="${PATH}/home/carson/.local/bin:"
+
+
 export LD_PRELOAD=""
 export EDITOR="vim"
 export BROWSER="firefox-beta"
