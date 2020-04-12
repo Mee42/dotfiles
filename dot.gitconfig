@@ -2,7 +2,11 @@
     name = Carson Graham
     email = carson42g@gmail.com
     signingkey = BB881A11F78A79D93FAB707D67D77A4726CF8D6F
- 
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
 [credential]
     helper = cache
 [core]

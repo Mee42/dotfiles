@@ -1,11 +1,14 @@
 #!/bin/bash
 cd ~/install/
-tar czf backup.tar.gz \
+tar cfv backup.tar.gz \
+    --use-compress-program='gzip -9' \
     --ignore-failed-read \
     --exclude='/home/carson/java/robotics' \
     --exclude='/home/carson/pictures/stuff-idk' \
     --exclude='/home/carson/java/workspace/Mindustry' \
     --exclude='/home/carson/java/workspace/kotlin' \
+    --exclude='/home/carson/java/workspace/EvolutionTwo' \
+    --exclude='/home/carson/java/workspace/EvolutionTwoBackup' \
     --exclude='/home/carson/no-bak' \
     /home/carson/Desktop \
     /home/carson/blender \

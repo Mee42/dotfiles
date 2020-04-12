@@ -52,4 +52,8 @@ source ~/.ps1
 export SDKMAN_DIR="/home/carson/.sdkman"
 [[ -s "/home/carson/.sdkman/bin/sdkman-init.sh" ]] && source "/home/carson/.sdkman/bin/sdkman-init.sh"
 
+export CLASSPATH=".:/usr/share/java/antlr-4.7.2-complete.jar:$CLASSPATH"
+
+stty -ixon
+
 gpg-connect-agent updatestartuptty /bye > /dev/null

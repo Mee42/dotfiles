@@ -1,0 +1,2 @@
+#!/bin/bash
+xclip -o | adn --server web --url | xclip

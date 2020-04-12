@@ -1,5 +1,3 @@
 #!/bin/bash
-#touch ~/install/RAN
-import root screenshot.jpg
-rm ./screenshot-1.jpg
-mv ./screenshot-0.jpg ~/install/screenshot.jpg
+cd ~/install/
+import screenshot.jpg

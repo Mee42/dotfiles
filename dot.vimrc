@@ -15,6 +15,12 @@ set shiftwidth=4
 set expandtab
 
 " turns off swapfiles
-set noswapfile
+" set noswapfile
 " enable persistent undo
-set undodir=~/.vim/undodir
+set undodir=~/.vim/undodir//
+set backupdir=~/.vim/backupdir//
+set directory=~/.vim/swp//
+
+colorscheme gruvbox
+let g:gruvbox_contrast_dark='hard'
+set background=dark
