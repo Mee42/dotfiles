@@ -1,4 +1,3 @@
 #!/bin/bash
-cp $(find ~/pictures/bg/aenamiart/ | shuf -n 1) ~/pictures/bg/current.jpg
-# mogrify -format png ~/pictures/bg/current.jpg &
+cp $(find ~/pictures/bg/aenamiart/ -maxdepth 1 -type f | shuf -n 1) ~/pictures/bg/current.jpg
 feh --bg-fill --no-fehbg ~/pictures/bg/current.jpg

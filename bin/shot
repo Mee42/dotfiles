@@ -1,3 +1,3 @@
 #!/bin/bash
 cd ~/install/
-import screenshot.jpg
+import screenshot.png

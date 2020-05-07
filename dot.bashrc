@@ -57,3 +57,4 @@ export CLASSPATH=".:/usr/share/java/antlr-4.7.2-complete.jar:$CLASSPATH"
 stty -ixon
 
 gpg-connect-agent updatestartuptty /bye > /dev/null
+alias vim=nvim
