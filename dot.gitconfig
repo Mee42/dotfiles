@@ -18,9 +18,10 @@
 [alias]
     s = status
     a = add
-    ac = !git add -A && git commit
-    c = commit
+    ac = !git add -A && git commit -v
+    c = commit -v
     co = checkout
     p = push
     b = branch
     f = fetch
+    d = diff
