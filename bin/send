@@ -1,3 +1,0 @@
-#!/bin/bash
-shot
-cat ~/install/screenshot.png | adn --server web --url | xclip

@@ -1,6 +1,0 @@
-#!/bin/bash
-scrot ~/install/lock.png
-convert -noise 0x10 ~/install/lock.png ~/install/lock.png
-# convert +noise Laplacian ~/install/lock.png ~/install/lock.png
-# convert -blur 1x1 ~/install/lock.png ~/install/lock.png
-i3lock -i ~/install/lock.png

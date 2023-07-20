@@ -1,2 +1,0 @@
-#!/bin/bash
-terminator --working-directory /home/carson -r FLOAT -x ". ~/bin/open-project2"

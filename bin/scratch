@@ -1,1 +1,0 @@
-run vim ~/Documents/scratch/$(date --rfc-3339=seconds | sed 's/-04:00//' | tr ' ' '_').txt
