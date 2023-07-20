@@ -1,0 +1,10 @@
+prefix for tmux: ctrl-o
+
+split horz            -
+split vert            |
+
+move left,right       {, }
+display IDs           q
+start command line    : 
+
+rotates all planes    crtl-o twice
