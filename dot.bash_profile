@@ -7,3 +7,7 @@ if [ -n "$BASH_VERSION" ]; then
     . "$HOME/.bashrc"
     fi
 fi
+
+if [ -f "$HOME/.profile" ]; then
+    . "$HOME/.profile"
+fi
