@@ -58,9 +58,30 @@ call plug#begin()
 
 Plug 'neanias/everforest-nvim', { 'branch': 'main' }
 Plug 'itchyny/lightline.vim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'simrat39/rust-tools.nvim'
 
 call plug#end()
 
 colorscheme everforest
 
 set number
+
+
+lua << EOF
+
+
+local rt = require("rust-tools")
+
+rt.setup({
+  server = {
+    on_attach = function(_, bufnr)
+      -- Hover actions
+      vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+      -- Code action groups
+      vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+    end,
+  },
+})
+
+EOF

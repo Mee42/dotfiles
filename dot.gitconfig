@@ -25,3 +25,5 @@
     b = branch
     f = fetch
     d = diff
+[init]
+	defaultBranch = master
