@@ -60,6 +60,10 @@ Plug 'neanias/everforest-nvim', { 'branch': 'main' }
 Plug 'itchyny/lightline.vim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'simrat39/rust-tools.nvim'
+Plug 'nvim-lua/completion-nvim'
+Plug 'nvim-lua/lsp-status.nvim'
+Plug 'nvim-lua/diagnostic-nvim'
+Plug 'p00f/clangd_extensions.nvim'
 
 call plug#end()
 
@@ -84,4 +88,22 @@ rt.setup({
   },
 })
 
+require("lspconfig").clangd.setup({
+  on_attach = function()
+     -- do stuff here....
+  end
+})
+
+require("clangd_extensions.inlay_hints").setup_autocmd()
+require("clangd_extensions.inlay_hints").set_inlay_hints()
+
 EOF
+
+
+
+nnoremap <buffer> K <cmd>lua vim.lsp.buf.hover()<cr>
+nnoremap <buffer> gd <cmd>lua vim.lsp.buf.definition()<cr>
+nnoremap <buffer> gD <cmd>lua vim.lsp.buf.declaration()<cr>
+nnoremap <buffer> gi <cmd>lua vim.lsp.buf.implementation()<cr>
+nnoremap <buffer> go <cmd>lua vim.lsp.buf.type_definition()<cr>
+nnoremap <buffer> gr <cmd>lua vim.lsp.buf.references()<cr>
