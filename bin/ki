@@ -1,0 +1,2 @@
+#!/bin/sh
+find fsae projects -name "*.kicad_pro" | rofi -x11 -normal-window -dmenu | xargs -r kicad
