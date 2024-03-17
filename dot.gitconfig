@@ -16,6 +16,9 @@
 [pull]
     ff = only
 
+[merge]
+    conflictstyle = diff3
+
 [alias]
     s = status
     a = add
