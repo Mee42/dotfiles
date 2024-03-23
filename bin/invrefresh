@@ -1,0 +1,4 @@
+#!/bin/bash
+
+curl -H "Authorization: Token $(cat ~/fsae/inventree_token)" http://collabserver.org:10003/api/part/.* | jq -r '.[] | select(.IPN != "") | .IPN + "   " + .name' > ~/install/inv.txt
+
