@@ -12,10 +12,9 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_DESCRIBE_STYLE=branch
-export GIT_PS1_SHOWUPSTREAM=auto
 
 
-PS1='\[\e[0;32m\][ \[\e[0;32m\]\u \[\e[0;33m\]\w\[\e[0;35m\]$(__git_ps1 " (%s)")\[\e[0;32m\] ] \$ \[\e[0m\]'
+PS1='\[\e[0;32m\][ \[\e[0;32m\]\u \[\e[0;35m\]$(__git_ps1 "(%s)") \[\e[0;32m\]\[\e[0;33m\]\w \[\e[0;32m\]] \$ \[\e[0m\]'
 
 
 export CUBEMX_COMMAND="/usr/lib/jvm/java-17-openjdk/bin/java -jar /opt/stm32cubemx/STM32CubeMX"
