@@ -33,3 +33,5 @@
     m = merge
 [init]
 	defaultBranch = master
+[push]
+	autoSetupRemote = true
