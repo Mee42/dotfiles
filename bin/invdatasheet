@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IPN=$(cat ~/install/inv.txt | rofi -x11 -normal-window -dmenu -i -matching-negate-char '\0' | sed 's/ .*//' | sed -E 's/...-0*([0-9]*)-00/\1/')
+IPN=$(cat ~/.inv.txt | rofi -x11 -normal-window -dmenu -i -matching-negate-char '\0' | sed 's/ .*//' | sed -E 's/...-0*([0-9]*)-00/\1/')
 
 [[ -z "$IPN" ]] && exit 0
 
@@ -10,7 +10,7 @@ LINK=$(curl -H "Authorization: Token $(cat ~/fsae/inventree_token)" "$URL" | jq 
 
 [[ ! -z "$LINK" ]] && firefox "$LINK"
 
-if [ ! -f ~/install/inv.txt ] || test "`find ~/install/inv.txt -mmin +10`"
+if [ ! -f ~/.inv.txt ] || test "`find ~/.inv.txt -mmin +10`"
 then
     ~/dotfiles/bin/invrefresh
 fi
