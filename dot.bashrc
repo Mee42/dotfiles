@@ -21,4 +21,4 @@ export CUBEMX_COMMAND="/usr/lib/jvm/java-17-openjdk/bin/java -jar /opt/stm32cube
 
 source ~/dotfiles/extern/git-completion.bash
 
-export PATH="$PATH:~/dotfiles/bin/"
+export PATH="$PATH:/home/carson/dotfiles/bin/"

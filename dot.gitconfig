@@ -36,3 +36,7 @@
 	defaultBranch = master
 [push]
 	autoSetupRemote = true
+[log]
+	date = format:%a %b %d %Y %I:%M:%S %p
+[status]
+	showuntrackedfiles = all
