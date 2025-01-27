@@ -1,2 +1,2 @@
 #!/bin/sh
-find fsae projects -name "*.kicad_pro" | rofi -x11 -normal-window -dmenu | xargs -r kicad
+find ~/ev25 ~/fsae ~/projects -follow -name "*.kicad_pro" | uniq | rofi -x11 -normal-window -dmenu | xargs -r kicad
